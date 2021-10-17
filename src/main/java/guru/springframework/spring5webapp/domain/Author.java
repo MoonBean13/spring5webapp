@@ -64,9 +64,10 @@ public class Author {
 		this.books = books;
 	}
 
+	// CAVE: Be careful about circular reference in toString method!
 	@Override
 	public String toString() {
-		return "Author [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", books=" + books + "]";
+		return "Author [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + "]";
 	}	
 	
 	@Override
